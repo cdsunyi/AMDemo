@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/membnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="卡          号:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/membnumbertv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/membnumber"
+                    android:paddingLeft="25dip"
+                    android:textColor="#0000FF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/finger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/membnumber"
+                    android:text="指 纹 录入:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fingertv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/finger"
+                    android:paddingLeft="25dip"
+                    android:textSize="15sp"
+                    android:text="未录" 
+                    android:layout_below="@id/membnumber"/>
+
+                <EditText
+                    android:id="@+id/nameEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/finger"
+                    android:background="@drawable/qq_edit_login"
+                    android:hint="请输入姓名"
+                    android:paddingLeft="110sp" />
+
+                <TextView
+                    android:id="@+id/nameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/nameEdit"
+                    android:layout_alignLeft="@+id/nameEdit"
+                    android:layout_alignTop="@+id/nameEdit"
+                    android:layout_marginRight="15dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="7.0dip"
+                    android:text="姓          名:"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/sexView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/nameEdit"
+                    android:layout_below="@+id/nameEdit"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:text="性          别:"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/sexRadio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignBottom="@id/sexView"
+                    android:layout_toRightOf="@id/sexView"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:text="男"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:text="女"
+                        android:textSize="15sp" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/mphoneEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/sexView"
+                    android:layout_below="@id/sexView"
+                    android:background="@drawable/qq_edit_login"
+                    android:hint="请输入手机号"
+                    android:paddingLeft="110sp"
+                    android:phoneNumber="true" />
+
+                <TextView
+                    android:id="@+id/mphoneView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/mphoneEdit"
+                    android:layout_alignLeft="@+id/mphoneEdit"
+                    android:layout_alignTop="@+id/mphoneEdit"
+                    android:layout_marginRight="15.0sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="7.0sp"
+                    android:text="手          机:"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/idnumberEdit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/mphoneEdit"
+                    android:layout_below="@id/mphoneEdit"
+                    android:background="@drawable/qq_edit_login"
+                    android:hint="请输入身份证号"
+                    android:inputType="number"
+                    android:paddingLeft="110sp" />
+
+                <TextView
+                    android:id="@+id/idnumberView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/idnumberEdit"
+                    android:layout_alignLeft="@+id/idnumberEdit"
+                    android:layout_alignTop="@+id/idnumberEdit"
+                    android:layout_marginRight="15.0sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="7.0sp"
+                    android:text="身 份 证号:"
+                    android:textColor="#ff3f3f3f"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/RelativityLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+        <Button
+            android:id="@+id/fingerBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="指纹录入" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+package com.ismart.interfaces;
+
+public interface UidDateCallback{
+    //回调position的位置就是点击Button所在的position
+     void sendUidDate(String uid);
+}

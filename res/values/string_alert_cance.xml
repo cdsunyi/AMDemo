@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_text">选择颜色</string>
+    <string name="string_alert_title">请选择功能</string>
+    <string name="string_alert_body">确定</string>
+    <string name="string_alert_ok">确认</string>
+    <string name="string_alert_cancel">取消</string>
+    
+    <array name="items_dialog">
+        <item>删除全部指纹</item>
+        <item>删除指定的指纹</item>
+        <item>暂无</item>
+    </array>
+</resources>
